@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame2Tune</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Turn Moments Into Music</h1>
+    <p>Upload an image. Choose a language. Let AI find your vibe.</p>
+
+    <form action="/recommend" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+
+        <select name="language">
+            <option value="Malayalam">Malayalam</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+        </select>
+
+        <button type="submit">Discover Songs</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Songs</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+
+
+<div class="songs">
+    {% for song in songs %}
+    <div class="card">
+        <iframe src="https://www.youtube.com/embed/{{ song.videoId }}"
+                frameborder="0" allowfullscreen></iframe>
+        <h3>{{ song.title }}</h3>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
